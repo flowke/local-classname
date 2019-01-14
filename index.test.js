@@ -3,6 +3,7 @@ const localsName = require('./index')
 let str1 = '  as1   as2   as3   as4  '
 let str2 = '  as1 '
 let str3 = 'as1 as5'
+let str4 = 'as1 as5 dts'
 
 let arr = [
   {
@@ -19,7 +20,7 @@ let arr = [
 
 
 test('str has more then one white space within names', ()=>{
-  expect(localsName([arr[0]], str1)).toBe('iam_sa1 iam_as2')
+  expect(localsName([arr[0]], str1)).toBe('iam_sa1 iam_as2 as3 as4')
 })
 
 test('have mutiple locals Object', ()=>{
@@ -31,4 +32,7 @@ test('last one locals Object matched', ()=>{
 
 test('the last locals Object priorly', ()=>{
   expect(localsName(arr, str3)).toBe('iam_sa1 iam_as5_1')
+})
+test('remain not local name', ()=>{
+  expect(localsName(arr, str4)).toBe('iam_sa1 iam_as5_1 dts')
 })

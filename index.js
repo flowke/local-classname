@@ -19,14 +19,13 @@ function classNameLocals(localsArr, str){
 }
 
 function find(arr, name){
-  var str;
   for(var i = arr.length-1; i>=0; i--){
     if(arr[i][name]){
-      str = arr[i][name]
+      name = arr[i][name]
       break;
     }
   }
-  return str
+  return name
 }
 
 module.exports = classNameLocals
