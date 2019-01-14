@@ -1,0 +1,23 @@
+{
+  "name": "local-classname",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "jest": "^23.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flowke/local-classname.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flowke/local-classname/issues"
+  },
+  "homepage": "https://github.com/flowke/local-classname#readme"
+}
